@@ -1,0 +1,11 @@
+header {
+	background: orange;
+}
+
+.body_projects .body_projects_container img {
+	position: absolute;
+	left: 50%;
+	margin-left: -175px;
+	height: 250px;
+	width: 350px;
+}

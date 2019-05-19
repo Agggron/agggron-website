@@ -1,0 +1,11 @@
+header {
+	background: yellow;
+}
+
+.home_projects .body_projects_container img {
+	position: absolute;
+	left: 50%;
+	margin-left: -87px;
+	height: 125px;
+	width: 175px;
+}

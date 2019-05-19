@@ -1,0 +1,132 @@
+html {
+	margin: 0;
+	border: 0;
+	padding: 0;
+
+	background: white;
+	color: black;
+}
+
+body {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+header {
+	background: black;
+}
+
+.home_image {
+	background: white;
+	background-image: url("main_page.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	
+	height: 100vh;
+}
+
+.home_about {
+	background: black;
+}
+
+.home_about .about_text {
+	padding: 20px 40px;
+	color: white;
+	font-size: 28px;
+	text-align: center;
+}
+
+.home_projects {
+	background: white;
+}
+
+.home_projects .body_text {
+	padding: 20px 40px;
+	color: black;
+	font-size: 28px;
+	text-align: center;
+}
+
+.home_projects .body_projects_container {
+	position: relative;
+	height: 500px;
+	width: 100%;
+} 
+
+.home_projects .body_projects_container img {
+	position: absolute;
+	left: 50%;
+	margin-left: -350px;
+	height: 500px;
+	width: 700px;
+}
+
+#project_image_yellowmooninn {
+	display: none;
+}
+
+#project_image_phagephighter {
+	display: none;
+}
+
+#body_projects_toggle {
+	cursor: pointer;
+}
+
+.home_projects .body_projects_text {
+	padding: 20px 40px;
+	color: black;
+	font-size: 28px;
+	text-align: center;
+} 
+
+.project_container 
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+	.project_container .project_text 
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+
+		color: white;
+		font-family: Arial Black, Gadget, sans-serif;
+		letter-spacing: 10px;
+	}
+		.project_container .project_text .project_text_title 
+		{
+			font-size: 64px;
+		}
+		.project_container .project_text .project_text_subtitle
+		{
+			font-size: 36px;
+		}
+	.project_container .project_image_thumbnail
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		padding: 20px;
+	}
+		.project_container .project_image_thumbnail img
+		{
+			max-height: 200px;
+		}
+
+.project_container.zodiac {
+	background-color: purple;
+}
+
+
+footer {
+	background: black;
+}
