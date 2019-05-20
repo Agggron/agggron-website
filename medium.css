@@ -14,3 +14,8 @@ header {
 
 		cursor: pointer;
 	}
+
+
+.home_projects .project_container .project_image img {
+	max-height: 150px;
+}
