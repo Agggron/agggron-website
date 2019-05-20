@@ -42,3 +42,36 @@ header {
 		max-height: 60px;
 		padding: 10px 0px;
 	}
+
+.home_contact {
+	padding: 20px;
+}
+
+.home_contact .contact_text {
+	padding: 20px;
+}
+
+	.home_contact .contact_container {
+		flex-direction: column;
+		padding: 0px 20px;
+	}
+		
+		.home_contact .contact_container .contact_image {
+			padding: 0px;
+		}
+
+			.home_contact .contact_container .contact_image img {
+				max-height: 100px;
+			}
+
+		.home_contact .contact_container .contact_text {
+		}
+
+		.home_contact .contact_container .contact_text .contact_text_title {
+			letter-spacing: 5px;
+			font-size: 32px;
+		}
+
+		.home_contact .contact_container .contact_text .contact_text_subtitle {
+			font-size: 18px;
+		}
