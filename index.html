@@ -6,22 +6,84 @@
 	<meta name="viewport" content="initial-scale=1">
 	<title>Aaron Tang - Home</title>
 	<link rel="stylesheet" type="text/css" href="app.css">
-	<link rel="stylesheet" type="text/css" media="screen and (max-width: 900px)" href="medium.css">
-	<link rel="stylesheet" type="text/css" media="screen and (max-width: 400px)" href="small.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 1200px)" href="medium.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 500px)" href="small.css">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 </head>
 
 <body>
 	<header>
-		[Header Here]
+		<div class="header_container">
+			<a href="" target="_blank">
+			<div class="header_title">
+				AARON TANG
+			</div>
+			</a>
+			<div class="header_navigation">
+				<a href="#anchor_about">
+				<div class="header_navigation_item">
+					ABOUT
+				</div>
+				</a>
+
+				<a href="#anchor_projects">
+				<div class="header_navigation_item">
+					PROJECTS
+				</div>
+				</a>
+
+				<a href="#anchor_resume">
+				<div class="header_navigation_item">
+					RESUME
+				</div>
+				</a>
+
+				<a href="#anchor_contact">
+				<div class="header_navigation_item">
+					CONTACT
+				</div>
+				</a>
+
+				
+				<div id="header_navigation_button">
+					≡
+				</div>
+				
+			</div>
+		</div>
+
+		<a href="#anchor_about">
+		<div class="header_hidden_navigation">
+			ABOUT
+		</div>
+		</a>
+
+		<a href="#anchor_projects">
+		<div class="header_hidden_navigation">
+			PROJECTS
+		</div>
+		</a>
+
+		<a href="#anchor_resume">
+		<div class="header_hidden_navigation">
+			RESUME
+		</div>
+		</a>
+
+		<a href="#anchor_contact">
+		<div class="header_hidden_navigation">
+			CONTACT
+		</div>
+		</a>
+		
 	</header>
 
 	<div class="home_image">
 		[Image Here]
 	</div>
 
-	<div class="home_about">
+	<div id="anchor_about" class="home_about">
 		<div class="about_text">
 			<p>Hi, I'm Aaron!</p>
 
@@ -29,7 +91,7 @@
 		</div>
 	</div>
 
-	<div class="home_projects">
+	<div id="anchor_projects" class="home_projects">
 		<div class="projects_text">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
@@ -38,7 +100,8 @@
 		<div class="project_container zodiac">
 			<div class="project_text">
 				<div class="project_text_title">ZODIAC</div>
-				<div class="project_text_subtitle"> — PUZZLE — TILE-MATCHING — </div>
+				<div class="project_text_subtitle"> — PUZZLE — </div>
+				<div class="project_text_subtitle"> — TILE-MATCHING — </div>
 			</div>
 			<div class="project_image">
 				<img id="project_image_zodiac" src="zodiac_group1.png">
@@ -49,8 +112,9 @@
 		<a href="">
 		<div class="project_container yellowmooninn">
 			<div class="project_text">
-				<div class="project_text_title">ZODIAC</div>
-				<div class="project_text_subtitle"> — PUZZLE — TILE-MATCHING — </div>
+				<div class="project_text_title">YELLOW MOON INN</div>
+				<div class="project_text_subtitle"> — ROLE-PLAYING-GAME — </div>
+				<div class="project_text_subtitle"> — TURN-BASED — </div>
 			</div>
 			<div class="project_image">
 				<img id="project_image_zodiac" src="zodiac_group1.png">
@@ -62,7 +126,8 @@
 		<div class="project_container phagephighter">
 			<div class="project_text">
 				<div class="project_text_title">PHAGE PHIGHTER</div>
-				<div class="project_text_subtitle"> — PUZZLE — TILE-MATCHING — </div>
+				<div class="project_text_subtitle"> — ACTION — </div>
+				<div class="project_text_subtitle"> — ENDLESS-RUNNER — </div>
 			</div>
 			<div class="project_image">
 				<img id="project_image_zodiac" src="zodiac_group1.png">
@@ -73,8 +138,10 @@
 		<a href="">
 		<div class="project_container gamejams">
 			<div class="project_text">
-				<div class="project_text_title">GAME JAMS</div>
-				<div class="project_text_subtitle"> — PUZZLE — TILE-MATCHING — </div>
+				<div class="project_text_title">OTHER PROJECTS</div>
+				<div class="project_text_subtitle"> — TITANOMACHY — </div>
+				<div class="project_text_subtitle"> — THE TRIAL — </div>
+				<div class="project_text_subtitle"> — GAME JAMS — </div>
 			</div>
 			<div class="project_image">
 				<img id="project_image_zodiac" src="zodiac_group1.png">
@@ -84,7 +151,7 @@
 
 	</div>
 
-	<div class="home_resume">
+	<div id="anchor_resume" class="home_resume">
 		<div class="resume_text">
 			<p>I've worked and/or studied at the following universities:</p>
 		</div>
@@ -98,7 +165,7 @@
 		</div>
 	</div>
 
-	<div class="home_contact">
+	<div id="anchor_contact" class="home_contact">
 		<div class="contact_text">
 			<p>Feel free to contact me in any of the following mediums. I would love to hear from you!</p>
 		</div>

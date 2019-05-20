@@ -25,4 +25,9 @@ $(document).ready(function() {
 		body_projects_counter += 1;
 	});
 
+
+	$('#header_navigation_button').click(function() {
+		$('.header_hidden_navigation').slideToggle();
+		console.log("toggle");
+	});
 });

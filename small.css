@@ -1,3 +1,14 @@
 header {
 	background: yellow;
+
+	flex-direction: column;
 }
+
+	header .header_container {
+		flex-direction: column;
+	}
+
+	header .header_container a .header_title {
+		font-size: 28px;
+		letter-spacing: 5px;
+	}
