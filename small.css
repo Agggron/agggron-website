@@ -13,26 +13,32 @@ header {
 		letter-spacing: 5px;
 	}
 
-.home_projects {
-	padding: 20px;
+
+.home_projects .project_container {
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
-	.home_projects .project_container {
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-	}
+.home_projects .project_container .project_text .project_text_title {
+	font-size: 32px;
+	letter-spacing: 8px;
+	text-align: center;
+}
 
-	.home_projects .project_container .project_text .project_text_title {
-		font-size: 32px;
-		letter-spacing: 8px;
-		text-align: center;
-	}
+.home_projects .project_container .project_text .project_text_subtitle {
+	font-size: 18px;
+}
 
-	.home_projects .project_container .project_text .project_text_subtitle {
-		font-size: 18px;
-	}
+.home_projects .project_container .project_image img {
+	max-height: 100px;
+}
 
-	.home_projects .project_container .project_image img {
-		max-height: 100px;
+.home_resume .resume_images {
+	flex-direction: column;
+}
+
+	.home_resume .resume_images img {
+		max-height: 60px;
+		padding: 10px 0px;
 	}

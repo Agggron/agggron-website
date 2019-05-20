@@ -15,7 +15,20 @@ header {
 		cursor: pointer;
 	}
 
-
-.home_projects .project_container .project_image img {
-	max-height: 150px;
+.home_projects {
+	padding: 20px;
 }
+	
+	.home_projects .project_container .project_text .project_text_title {
+		font-size: 36px;
+		letter-spacing: 8px;
+		text-align: center;
+	}
+
+	.home_projects .project_container .project_text .project_text_subtitle {
+		font-size: 24px;
+	}
+
+	.home_projects .project_container .project_image img {
+		max-height: 150px;
+	}

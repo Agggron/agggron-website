@@ -1,7 +1,11 @@
 html {
+	
 	margin: 0;
 	border: 0;
 	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
 
 	background: white;
 	color: black;
@@ -15,6 +19,9 @@ body {
 	margin: 0;
 	border: 0;
 	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 header {
