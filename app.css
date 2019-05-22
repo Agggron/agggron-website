@@ -10,6 +10,8 @@ html {
 	color: black;
 
 	font-family: 'Raleway', Times New Roman, sans-serif;
+	font-size: 28px;
+	text-align: center;
 }
 
 a {
@@ -114,8 +116,6 @@ header {
 	.home_about .about_text {
 		padding: 20px 40px;
 		color: white;
-		font-size: 28px;
-		text-align: center;
 	}
 
 .home_projects {
@@ -131,8 +131,6 @@ header {
 
 	.home_projects .projects_text {
 		color: black;
-		font-size: 28px;
-		text-align: center;
 	}
 
 	.home_projects .project_container {
@@ -156,7 +154,7 @@ header {
 
 			.home_projects .project_container .project_text .project_text_title {
 				font-family: 'Raleway', Times New Roman, sans-serif;
-				font-size: 56px;
+				font-size: 64px;
 				font-weight: bold;
 				letter-spacing: 5px;
 				text-align: center;
@@ -206,8 +204,6 @@ header {
 	.home_resume .resume_text {
 		padding: 20px 40px;
 		color: white;
-		font-size: 28px;
-		text-align: center;
 	}
 
 	.home_resume .resume_images {
@@ -233,8 +229,6 @@ header {
 	.home_contact .contact_text {
 		padding: 20px 40px;
 		color: black;
-		font-size: 28px;
-		text-align: center;
 
 		width: 100%;
 	}
