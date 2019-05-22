@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 
 	$('#header_navigation_button').click(function() {
-		$('.header_hidden_navigation').slideToggle();
+		$('.header_container_hidden').slideToggle();
 		console.log("toggle");
 	});
 });

@@ -66,17 +66,19 @@ header {
 			display: none;
 		}
 
-	header a .header_hidden_navigation {
+	header .header_container_hidden {
 		display: none;
-
-		background: #404040;
-		color: white;
-		font-family: Times New Roman, serif;
-		font-size: 24px;
-		text-align: center;
-
-		min-height: 40px;
 	}
+	
+		header .header_container_hidden a .header_navigation_hidden {
+			background: #404040;
+			color: white;
+			font-family: Times New Roman, serif;
+			font-size: 24px;
+			text-align: center;
+
+			min-height: 40px;
+		}
 
 .home_image {
 	background: white;
