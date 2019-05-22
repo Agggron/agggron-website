@@ -26,19 +26,27 @@ header {
 	align-items: center;
 }
 
-.home_projects .project_container .project_text .project_text_title {
-	font-size: 32px;
-	letter-spacing: 8px;
-	text-align: center;
-}
+	.home_projects .project_container .project_text .project_text_title {
+		font-size: 32px;
+		letter-spacing: 2px;
+		text-align: center;
+	}
 
-.home_projects .project_container .project_text .project_text_subtitle {
-	font-size: 18px;
-}
+	.home_projects .project_container .project_text .project_text_subtitle {
+		font-size: 18px;
+	}
 
-.home_projects .project_container .project_image img {
-	max-height: 100px;
-}
+	.home_projects .project_container .project_image img {
+		max-height: 100px;
+	}
+
+	.home_projects .project_container.yellowmooninn {
+		flex-direction: column;
+	}
+
+	.home_projects .project_container.gamejams {
+		flex-direction: column;
+	}
 
 .home_resume .resume_images {
 	flex-direction: column;
