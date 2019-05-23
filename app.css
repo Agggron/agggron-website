@@ -36,6 +36,7 @@ header {
 
 	position: fixed;
 	width: 100%;
+	z-index: 2;
 }
 	header .header_container {
 		display: flex;
@@ -310,4 +311,5 @@ footer {
 
 .fade_in_element {
 	opacity: 0;
+	z-index: 1;
 }
