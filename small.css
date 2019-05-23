@@ -2,8 +2,6 @@ html {
 	font-size: 24px;
 }
 header {
-	background: green;
-
 	flex-direction: column;
 }
 

@@ -30,4 +30,11 @@ $(document).ready(function() {
 		$('.header_container_hidden').slideToggle();
 		console.log("toggle");
 	});
+
+	var navigation_hidden_links = ['#header_navigation_hidden_about', '#header_navigation_hidden_projects', '#header_navigation_hidden_resume', '#header_navigation_hidden_contact']
+	for (i = 0; i < navigation_hidden_links.length; i++) {
+		$(navigation_hidden_links[i]).click(function() {
+			$('.header_container_hidden').slideToggle();
+		})
+	}
 });
