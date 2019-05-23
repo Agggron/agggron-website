@@ -307,3 +307,7 @@ footer {
 		color: white;
 		font-size: 28px;
 	}
+
+.fade_in_element {
+	opacity: 0;
+}

@@ -1,29 +1,23 @@
+const fade_in_elements = function() {
+	$('.fade_in_element').each(function() {
+		var object_bottom = $(this).offset().top;
+		var object_height = $(this).outerHeight();
+		var window_bottom = $(window).scrollTop() + $(window).height();
+
+		if (window_bottom > (object_bottom + (object_height / 4))) {
+			$(this).animate({
+				opacity: 1
+			}, 1000);
+		}
+	});
+}
+
 $(document).ready(function() {
 
-	var body_projects_counter = 0
-
-	$('#body_projects_toggle').click(function() {
-
-		if (body_projects_counter % 3 == 0) {
-			$('#project_image_zodiac').fadeOut('slow', function() {
-				$('#project_image_yellowmooninn').delay(100).fadeIn('slow');
-			});
-		}
-
-		if (body_projects_counter % 3 == 1) {
-			$('#project_image_yellowmooninn').fadeOut('slow', function() {
-				$('#project_image_phagephighter').delay(100).fadeIn('slow');
-			});
-		}
-
-		if (body_projects_counter % 3 == 2) {
-			$('#project_image_phagephighter').fadeOut('slow', function() {
-				$('#project_image_zodiac').delay(100).fadeIn('slow');
-			});
-		}
-
-		body_projects_counter += 1;
-	});
+	// Fade in elements at startup.
+	fade_in_elements();
+	// Also fade in elements every time the user scrolls.
+	$(window).scroll(fade_in_elements);
 
 
 	$('#header_navigation_button').click(function() {
