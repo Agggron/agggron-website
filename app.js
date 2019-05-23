@@ -29,9 +29,13 @@ $(document).ready(function() {
 	// Also fade in elements every time the user scrolls.
 	$(window).scroll(fade_in_elements);
 
+	$('html, body').click(function() {
+		$('.header_container_hidden').slideUp();
+	});
 
-	$('#header_navigation_button').click(function() {
+	$('#header_navigation_button').click(function(event) {
 		$('.header_container_hidden').slideToggle();
+		event.stopPropagation();
 		console.log("toggle");
 	});
 
