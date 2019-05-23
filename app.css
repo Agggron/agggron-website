@@ -31,7 +31,7 @@ body {
 }
 
 header {
-	background: rgba(32, 32, 32, 0.9);
+	background: rgba(32, 32, 32, 0.95);
 
 	display: flex;
 	flex-direction: column;
@@ -128,7 +128,7 @@ header {
 }
 
 .home_about {
-	background: #202020;
+	background: rgba(48, 48, 48, 1);
 }
 
 	.home_about .about_text {
@@ -216,7 +216,7 @@ header {
 	}
 
 .home_resume {
-	background: #202020
+	background: rgba(48, 48, 48, 1);
 }
 
 	.home_resume .resume_text {
