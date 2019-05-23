@@ -18,6 +18,10 @@ a {
 	text-decoration: none;
 }
 
+	a:hover {
+		cursor: pointer;
+	}
+
 body {
 	margin: 0;
 	border: 0;
