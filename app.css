@@ -118,13 +118,45 @@ header {
 		}
 
 .home_image {
-	background: white;
-	background-image: url("main_page.jpg");
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("main_page.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	
 	height: 100vh;
+}
+
+.home_type_container {
+	position: absolute;
+
+	width: 280px;
+	top: 215px;
+	left: 50%;
+	margin-left: -140px;
+}
+
+	.home_type_container .home_type_text {
+		font-family: monospace;
+		letter-spacing: 0.1em;
+		color: white;
+
+		margin: 0 auto;
+		overflow: hidden;
+		white-space: nowrap;
+		border-right: 0.15em solid white;
+
+		animation: 
+			type_text 10s steps(40, end) infinite,
+			cursor_blink 0.75s step-end infinite;
+	}
+
+@keyframes type_text {
+	from, 75%, to { width: 0 }
+	20%, 45% { width: 100% }
+}
+
+@keyframes cursor_blink {
+	from, to { border-color: transparent; }
+	50% { border-color: white; }
 }
 
 .home_about {
