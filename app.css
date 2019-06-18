@@ -209,6 +209,8 @@ header {
 				font-weight: bold;
 				letter-spacing: 5px;
 				text-align: center;
+
+				margin-bottom: 10px;
 			}
 
 			.home_projects .project_container .project_text .project_text_subtitle {
@@ -216,6 +218,21 @@ header {
 				font-size: 28px;
 				text-align: center;
 			}
+
+			.home_projects .project_container .project_text .project_text_more {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: center;
+				align-items: center;
+
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+
+				.home_projects .project_container .project_text .project_text_more .project_text_more_text {
+					padding-right: 20px;
+				}
 
 		.home_projects .project_container .project_image {
 			display: flex;
@@ -231,7 +248,6 @@ header {
 			}
 
 		.home_projects .project_container .project_hidden {
-			background-color: seagreen;
 			margin: 10px;
 			padding: 10px 20px;
 
@@ -243,19 +259,35 @@ header {
 		background-color: mediumseagreen;
 	}
 
+		.home_projects .project_container.rehamove .project_hidden {
+			background-color: seagreen;
+		}
+
 	.home_projects .project_container.zodiac {
 		background-color: indigo;
 		flex-direction: row-reverse;
 	}
 
+		.home_projects .project_container.zodiac .project_hidden {
+			background-color: rebeccapurple;
+		}
+
 	.home_projects .project_container.yellowmooninn {
 		background-color: goldenrod;
 	}
+
+		.home_projects .project_container.yellowmooninn .project_hidden {
+			background-color: darkgoldenrod;
+		}
 
 	.home_projects .project_container.gamejams {
 		background-color: cornflowerblue;
 		flex-direction: row-reverse;
 	}
+
+		.home_projects .project_container.gamejams .project_hidden {
+			background-color: royalblue;
+		}
 
 .home_resume {
 	background: rgba(48, 48, 48, 1);

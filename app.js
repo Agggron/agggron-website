@@ -46,6 +46,19 @@ const scroll_to_anchor = function(event) {
 	}, 1000);
 }
 
+jQuery.fn.rotate = function(degrees) {
+    $(this).css({'-webkit-transform' : 'rotate('+ degrees +'deg)', 
+        '-moz-transform' : 'rotate('+ degrees +'deg)',
+        '-ms-transform' : 'rotate('+ degrees +'deg)', 
+        'transform' : 'rotate('+ degrees +'deg)',
+        'transform-origin' : 'center',
+        '-webkit-transition' : '.3s ease-out',
+        '-moz-transition' : '.3s ease-out',
+        '-o-transition' : '.3s ease-out'});
+
+    return $(this);
+}
+
 $(document).ready(function() {
 
 	// Fade in elements (and add hover effects) at startup.
@@ -64,14 +77,14 @@ $(document).ready(function() {
 	});
 
 	$('.project_text_more').click(function(event) {
-		if ($('.project_hidden').css('display') == 'none') {
-			console.log("opening display");
-			$('.project_text_more').html('[Show Less]');
+		if ($(this).parent().siblings('.project_hidden').css('display') == 'none') {
+			$(this).children('.project_text_more_text').html('Show Less');
+			$(this).children('.triangle').rotate(90);
 		} else {
-			console.log("closing display");
-			$('.project_text_more').html('[Show More]');
+			$(this).children('.project_text_more_text').html('Show More');
+			$(this).children('.triangle').rotate(0);
 		}
-		$('.project_hidden').slideToggle();
+		$(this).parent().siblings('.project_hidden').slideToggle();
 
 		event.stopPropagation();
 		event.preventDefault();
