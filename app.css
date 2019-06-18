@@ -268,15 +268,20 @@ header {
 	background: white;
 
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
 
 	padding: 40px;
-
-	font-family: Arial Black, Gadget, sans-serif;
 }
+
+	.home_contact .contact_container_all {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: stretch;
+	}
 
 	.home_contact a {
 		max-width: 800px;
@@ -291,8 +296,9 @@ header {
 
 		background: #404040;
 
-		margin: 20px 0px;
+		margin: 20px;
 		max-width: 300px;
+		min-height: 320px;
 	}
 
 		.home_contact .contact_container .contact_image {
@@ -310,15 +316,17 @@ header {
 
 		.home_contact .contact_container .contact_text_title {
 			letter-spacing: 3px;
-			font-size: 28px;
+			font-size: 32px;
 			text-align: center;
 
-			padding: 10px 20px 10px 20px;
+			padding: 10px 20px;
+			margin-left: 10px;
 		}
 
 		.home_contact .contact_container .contact_text_subtitle {
-			font-size: 16px;
+			font-size: 24px;
 
+			margin-left: 7.5px;
 			padding: 10px 20px 20px 20px;
 		}
 
