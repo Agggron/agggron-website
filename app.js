@@ -13,7 +13,7 @@ const fade_in_elements = function() {
 				// Case 1: On hover, fade AND move container. (For contact boxes)
 				if ($(this).hasClass('contact_container')) {
 					$(this).animate({opacity: 1}, 600).delay(1).hover(function() {
-						$(this).animate({opacity: 0.8, marginTop: '10px', marginBottom: '30px'});
+						$(this).animate({opacity: 0.85, marginTop: '10px', marginBottom: '30px'});
 					}, function() {
 						$(this).animate({opacity: 1, marginTop: '20px', marginBottom: '20px'});
 					});
@@ -21,7 +21,7 @@ const fade_in_elements = function() {
 				// Case 2: On hover, fade container. (For project boxes)
 				else {
 					$(this).animate({opacity: 1}, 600).delay(1).hover(function() {
-						$(this).animate({opacity: 0.8});
+						$(this).animate({opacity: 0.85});
 					}, function () {
 						$(this).animate({opacity: 1});
 					});
@@ -62,6 +62,20 @@ $(document).ready(function() {
 		event.stopPropagation();
 		console.log("toggle");
 	});
+
+	$('.project_text_more').click(function(event) {
+		if ($('.project_hidden').css('display') == 'none') {
+			console.log("opening display");
+			$('.project_text_more').html('[Show Less]');
+		} else {
+			console.log("closing display");
+			$('.project_text_more').html('[Show More]');
+		}
+		$('.project_hidden').slideToggle();
+
+		event.stopPropagation();
+		event.preventDefault();
+	})
 
 	var navigation_hidden_links = ['.scroll_to_top', '#header_navigation_hidden_about', '#header_navigation_hidden_projects', '#header_navigation_hidden_resume', '#header_navigation_hidden_contact']
 	for (i = 0; i < navigation_hidden_links.length; i++) {

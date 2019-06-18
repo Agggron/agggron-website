@@ -186,6 +186,7 @@ header {
 	.home_projects .project_container {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: space-evenly;
 		align-items: center;
 
@@ -228,6 +229,15 @@ header {
 			.home_projects .project_container .project_image img {
 				max-height: 200px;
 			}
+
+		.home_projects .project_container .project_hidden {
+			background-color: seagreen;
+			margin: 10px;
+			padding: 10px 20px;
+
+			color: white;
+			display: none;
+		}
 
 	.home_projects .project_container.rehamove {
 		background-color: mediumseagreen;
