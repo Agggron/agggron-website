@@ -189,9 +189,19 @@ header {
 		justify-content: space-evenly;
 		align-items: center;
 
-		margin: 20px 0px;
+		webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        transition: all 1s ease;
+
+        opacity: 1;
+
+		margin: 25px 0px;
 		padding: 20px;
 	}
+
+		.home_projects .project_container:hover {
+			opacity: 0.8 !important;
+		}
 
 		.home_projects .project_container .project_text {
 			display: flex;
@@ -229,21 +239,21 @@ header {
 				max-height: 200px;
 			}
 
+	.home_projects .project_container.rehamove {
+		background-color: mediumseagreen;
+	}
+
 	.home_projects .project_container.zodiac {
 		background-color: indigo;
+		flex-direction: row-reverse;
 	}
 
 	.home_projects .project_container.yellowmooninn {
 		background-color: goldenrod;
-		flex-direction: row-reverse;
-	}
-
-	.home_projects .project_container.phagephighter {
-		background-color: mediumseagreen;
 	}
 
 	.home_projects .project_container.gamejams {
-		background-color: slateblue;
+		background-color: cornflowerblue;
 		flex-direction: row-reverse;
 	}
 
@@ -274,47 +284,37 @@ header {
 	align-items: center;
 
 	padding: 40px;
+
+	font-family: Arial Black, Gadget, sans-serif;
 }
-
-	.home_contact .contact_text {
-		padding: 20px 40px;
-		color: black;
-
-		width: 100%;
-	}
 
 	.home_contact a {
 		max-width: 800px;
+		color: white;
 	}
 
 	.home_contact .contact_container {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
 
+		webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        transition: all 1s ease;
+
 		background: #404040;
+		opacity: 1;
+
 		margin: 20px 0px;
+
+		max-width: 300px;
 	}
 
-		.home_contact .contact_container .contact_text {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-evenly;
-			align-items: center;
-
-			color: white;
-			font-family: Arial Black, Gadget, sans-serif;
+		.home_contact .contact_container:hover {
+			opacity: 0.8 !important;
+			margin: 10px 0px 30px 0px;
 		}
-
-			.home_contact .contact_container .contact_text .contact_text_title {
-				letter-spacing: 5px;
-				font-size: 48px;
-			}
-
-			.home_contact .contact_container .contact_text .contact_text_subtitle {
-				font-size: 28px;
-			}
 
 		.home_contact .contact_container .contact_image {
 			display: flex;
@@ -322,12 +322,28 @@ header {
 			justify-content: center;
 			align-items: center;
 
-			padding: 20px;
+			padding: 20px 20px 10px 20px;
 		}
 
 			.home_contact .contact_container .contact_image img {
-				max-height: 200px;
+				max-height: 100px;
 			}
+
+		.home_contact .contact_container .contact_text_title {
+			letter-spacing: 3px;
+			font-size: 28px;
+			text-align: center;
+
+			padding: 10px 20px 10px 20px;
+		}
+
+		.home_contact .contact_container .contact_text_subtitle {
+			font-size: 16px;
+
+			padding: 10px 20px 20px 20px;
+		}
+
+		
 
 footer {
 	background: #202020;
