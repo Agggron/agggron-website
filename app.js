@@ -1,13 +1,37 @@
 const fade_in_elements = function() {
 	$('.fade_in_element').each(function() {
+		if ($(this).css('opacity') != 0) {
+			// console.log("element " + this.innerHTML + " returns.");
+			return;
+		}
 		var object_bottom = $(this).offset().top;
 		var object_height = $(this).outerHeight();
 		var window_bottom = $(window).scrollTop() + $(window).height();
 
 		if (window_bottom > (object_bottom + (object_height / 4))) {
-			$(this).animate({
-				opacity: 1
-			}, 600);
+			if ($(this).hasClass('hover_element')) {
+				// Case 1: On hover, fade AND move container. (For contact boxes)
+				if ($(this).hasClass('contact_container')) {
+					$(this).animate({opacity: 1}, 600).delay(1).hover(function() {
+						$(this).animate({opacity: 0.8, marginTop: '10px', marginBottom: '30px'});
+					}, function() {
+						$(this).animate({opacity: 1, marginTop: '20px', marginBottom: '20px'});
+					});
+				} 
+				// Case 2: On hover, fade container. (For project boxes)
+				else {
+					$(this).animate({opacity: 1}, 600).delay(1).hover(function() {
+						$(this).animate({opacity: 0.8});
+					}, function () {
+						$(this).animate({opacity: 1});
+					});
+				}
+			} 
+			// Case 3: No hover effects, just fade the element onto the screen.
+			else {
+				$(this).animate({opacity: 1}, 600);
+			}
+			
 		}
 	});
 }
@@ -24,7 +48,7 @@ const scroll_to_anchor = function(event) {
 
 $(document).ready(function() {
 
-	// Fade in elements at startup.
+	// Fade in elements (and add hover effects) at startup.
 	fade_in_elements();
 	// Also fade in elements every time the user scrolls.
 	$(window).scroll(fade_in_elements);

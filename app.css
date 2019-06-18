@@ -189,19 +189,9 @@ header {
 		justify-content: space-evenly;
 		align-items: center;
 
-		webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        transition: all 1s ease;
-
-        opacity: 1;
-
 		margin: 25px 0px;
 		padding: 20px;
 	}
-
-		.home_projects .project_container:hover {
-			opacity: 0.8 !important;
-		}
 
 		.home_projects .project_container .project_text {
 			display: flex;
@@ -299,22 +289,11 @@ header {
 		justify-content: space-evenly;
 		align-items: center;
 
-		webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        transition: all 1s ease;
-
 		background: #404040;
-		opacity: 1;
 
 		margin: 20px 0px;
-
 		max-width: 300px;
 	}
-
-		.home_contact .contact_container:hover {
-			opacity: 0.8 !important;
-			margin: 10px 0px 30px 0px;
-		}
 
 		.home_contact .contact_container .contact_image {
 			display: flex;
