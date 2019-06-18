@@ -228,6 +228,8 @@ header {
 
 				margin-top: 20px;
 				margin-bottom: 10px;
+
+				cursor: pointer;
 			}
 
 				.home_projects .project_container .project_text .project_text_more .project_text_more_text {
