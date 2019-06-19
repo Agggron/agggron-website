@@ -16,6 +16,7 @@ html {
 
 a {
 	text-decoration: none;
+	color: white;
 }
 
 	a:hover {
@@ -202,6 +203,10 @@ header {
 
 			color: white;
 		}
+
+			.home_projects .project_container .project_text a {
+				color: white;
+			}
 
 			.home_projects .project_container .project_text .project_text_title {
 				font-family: 'Raleway', Times New Roman, sans-serif;
