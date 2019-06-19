@@ -25,7 +25,7 @@
       <a href="../">
       <div class="header_title">
         <div class="header_title_image">
-          <img src="../header_logo.png">
+          <img src="../assets/header_logo.png">
         </div>
         <div class="header_title_text">
           AARON TANG

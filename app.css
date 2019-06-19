@@ -119,7 +119,7 @@ header {
 		}
 
 .home_image {
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("main_page.jpg");
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/main_page.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
